@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tsukasa.tourhelper.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="行きたい場所を選んでください！"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp" />
+
+    <Spinner
+        android:id="@+id/placeList"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ドライブの時間を決めてください"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/placeList"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="40dp" />
+    <Button
+        android:id="@+id/starttimeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="開始時間"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="78dp"
+        />
+
+    <Button
+        android:id="@+id/endtimeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="終了時間"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="78dp" />
+
+    <TextView
+        android:id="@+id/starttimeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="88dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/starttimeButton"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="00:00"
+        android:textSize="28dp"
+        />
+
+    <TextView
+        android:id="@+id/endtimeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="88dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/endtimeButton"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="00:00"
+        android:textSize="28dp"
+        />
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="〜"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        android:layout_marginTop="85dp"
+        app:layout_constraintLeft_toRightOf="@+id/starttimeView"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintRight_toLeftOf="@+id/endtimeView"
+        android:layout_marginRight="5dp"
+        />
+
+    <Button
+        android:id="@+id/routeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ルート検索開始"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="130dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="118dp"
+        android:layout_height="114dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteY="381dp" />
+
+</android.support.constraint.ConstraintLayout>
